@@ -1,0 +1,12 @@
+{
+    "name": "raneko/portal",
+    "description": "Library to access portal functionalities",
+    "autoload": {
+        "psr-4": {
+            "Raneko\\": "src"
+        }
+    },
+    "require": {
+        "monolog/monolog": "*"
+    }
+}
