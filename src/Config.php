@@ -19,7 +19,7 @@ class Config {
      * Set key to make API call.
      * @param string $key
      */
-    public static function setKey($key) {
+    public static function setApiKey($key) {
         self::$data["key"] = $key;
     }
 
@@ -78,6 +78,24 @@ class Config {
      */
     public static function getExtension() {
         return isset(self::$data["extension"]) ? self::$data["extension"] : "json";
+    }
+    
+    /**
+     * Get key used to store the token.
+     * @return string
+     */
+    public static function getTokenKey()
+    {
+        return isset(self::$data["token_key"]) ? self::$data["token_key"] : "tokenId";
+    }
+    
+    /**
+     * Set key to get the token.
+     * @param string $key
+     */
+    public static function setTokenKey($key)
+    {
+        self::$data["token_key"] = $key;
     }
 
 }
